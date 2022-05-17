@@ -135,7 +135,8 @@ html{
 }
                       /* footer styling  */
  footer{
-     background: var(--dark);
+     /* margin: 2px; */
+     background:rgb(0, 0, 0);
      padding: 16px 23px;
      color: var(--secondary);
      text-align: center;

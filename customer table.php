@@ -1,16 +1,52 @@
 <html>
     <head>
-        <link rel="stylesheet" href="mny-trnsfr.css">
+        <style>
+            @import url(css.css);
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    margin-top: 10px;
+}
+body{
+    background:black;
+    color: white;
+}
+table{
+    max-width:1300px;
+    margin: 10px;
+    
+}
+.myself{
+    box-sizing: border-box;
+    border: 1mm solid white;
+}
+/* responsive styling table */
+/* @media(max-width:100px){
+   table{
+       margin: 20px;
+   }
+
+} */
+        </style>
 
     </head>
     <body>
         <section class="myself">
            <div class="max-width">
             <div>
-              <?php
-              $
-              ?>
+                <?php
+                $user_name=$_GET["username"];
+                $user_email=$_GET["email"];
+                echo'<table border="1">';
+                echo"<tr>
+                    <th>name</th>
+                    <th>email</th>";
+                echo"<tr>
+                     <td>$user_name</td>
+                     <td>$user_email</td>
+                     </tr>";
 
+                ?>
             </div>
             <div class="mny-trnsfr">
                 <input type="button">
